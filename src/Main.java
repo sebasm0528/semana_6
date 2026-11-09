@@ -22,11 +22,11 @@ public class Main{
             switch (opcion){
                 case 1:
                     input.nextLine();
-                    System.out.print("Ingrese el nombre de la persona:");
+                    System.out.print("Ingrese el nombre de la persona: ");
                     String nombre = input.nextLine();
-                    System.out.print("Ingrese la edad de la persona:");
+                    System.out.print("Ingrese la edad de la persona: ");
                     int edad = input.nextInt();
-                    System.out.print("Ingrese la estatura de la persona:");
+                    System.out.print("Ingrese la estatura de la persona: ");
                     float estatura = input.nextFloat();
 
                     Persona persona = new Persona(nombre, edad, estatura);
@@ -35,7 +35,7 @@ public class Main{
                     break;
                 case 2:
                     if(personas.isEmpty()){
-                        System.out.println("No hay personas registradas");
+                        System.out.println(" -No hay personas registradas");
                     }else{
                         for(Persona p: personas){
                             p.imprimirDatos();
@@ -43,7 +43,7 @@ public class Main{
                     }
                     break;
                 case 0:
-                    System.out.println("\nSaliendo del programa...");
+                    System.out.println("\n Saliendo del programa...");
                     break;
                 default:
                     System.out.println("\n -Opción incorrecta");
