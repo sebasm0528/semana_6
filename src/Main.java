@@ -35,7 +35,7 @@ public class Main{
                     break;
                 case 2:
                     if(personas.isEmpty()){
-                        System.out.println(" -No hay personas registradas");
+                        System.out.println("\n -No hay personas registradas");
                     }else{
                         for(Persona p: personas){
                             p.imprimirDatos();
