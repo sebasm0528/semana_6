@@ -46,6 +46,7 @@ public class Persona {
     public String descripcion(){
         return "Persona: " + nombre;
     }
+
     public void imprimirDatos(){
         System.out.println("\n-----------------");
         System.out.println("Nombre: " + nombre);
@@ -53,6 +54,7 @@ public class Persona {
         System.out.println("Estatura: " + estatura);
         System.out.println("-----------------");
     }
+
     public Persona copiar(){
         return new Persona(nombre);
     }
